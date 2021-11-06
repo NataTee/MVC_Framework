@@ -1,3 +1,6 @@
+#ignore everything
+*
+
 application/cache/*
 !application/cache/index.html
 
@@ -7,3 +10,17 @@ application/logs/*
 !application/*/.htaccess
 
 .htaccess
+
+!assets/*
+
+!*/
+!*.php
+!*.html
+!*.css
+!*.gif
+!*.ico
+!*.jpg
+!*.png
+!*.js
+
+!*.gitignore
