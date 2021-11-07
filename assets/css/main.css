@@ -102,6 +102,40 @@ div p {
   margin: 10px;
 }
 
+/* Form Layout Styles */
+
+fieldset {
+  display: block;
+  background: grey;
+  border-radius: 20px;
+  font-size: 1em;
+  min-width: 150px;
+  padding: 10px;
+  margin: 0px;
+}
+
+div.formRow {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	margin: 7px 0px;
+}
+
+div#button {
+	text-align: center;
+	width: 100%;
+  padding-bottom: 20px;
+}
+
+input {
+  min-width: 100px;
+}
+
+input:focus {
+  background-color: rgb(220, 255, 220);
+}
+
 /* Footer styles */
 
 footer {
@@ -147,6 +181,11 @@ footer img {
     display: none;
   }
 
+  div.formRow > * {
+  	-webkit-flex: 1 1 100px;
+  	flex: 1 1 100px;
+  }
+
   section#programs article {
     margin: 3px;
   }
@@ -172,6 +211,16 @@ footer img {
   section#programs article img {
     display: flex;
     width: 70%;
+  }
+
+  #registration fieldset, #email-form fieldset {
+    font-size: 1.3em;
+    margin: 15px;
+  }
+
+  div.formRow > * {
+  	-webkit-flex: 1 1 150px;
+  	flex: 1 1 150px;
   }
 }
 
@@ -212,6 +261,24 @@ footer img {
       margin: 10px;
     }
 
+    .about-body {
+      display: flex;
+    }
+
+    .about-body iframe{
+      float: right;
+    }
+
+    .about-body p {
+      padding: 10px;
+    }
+
+    .contact p {
+      padding: 10px;
+      text-align: center;
+      font-size: 1.1em;
+    }
+
     .main-banner {
       margin: 0 auto;
       width: 100%;
@@ -250,5 +317,15 @@ footer img {
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
+    }
+
+    #registration fieldset, #email-form fieldset {
+      font-size: 1.5em;
+      margin: 25px;
+    }
+
+    div.formRow > * {
+    	-webkit-flex: 1 1 150px;
+    	flex: 1 1 150px;
     }
   }
