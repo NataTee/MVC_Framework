@@ -17,6 +17,17 @@ Filename: home.php
 
   </aside>
 
+  <div class="main-banner" id="main-banner">
+      <div class="imgban" id="imgban3">
+      </div>
+
+      <div class="imgban" id="imgban2">
+      </div>
+
+      <div class="imgban" id="imgban1">
+      </div>
+  </div>
+
   <section id="programs">
     <article>
       <img src="../../assets/images/group.jpg" alt="Group Fitness" />
@@ -52,3 +63,5 @@ Filename: home.php
     </article>
   </section>
 </div>
+
+<script src="../../assets/js/banner.js" async></script>
