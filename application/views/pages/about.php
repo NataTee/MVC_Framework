@@ -16,7 +16,7 @@ Filename: home.php
 </div>
 <hr>
 <div class="contact">
-    <p id="contact-title">If you have additionla comments or concerns, feel free to
+    <p id="contact-title">If you have additional comments or concerns, feel free to
       contact us by 3058107@gmail.com<br> or just leave your message here</p>
 </div>
 
@@ -60,3 +60,7 @@ Filename: home.php
     <button type="button" id="submitBtn">Send</button>
     <button type="button" id="clearBtn">Clear</button>
 </div>
+
+<script src="../../assets/js/jquery-3.6.0.min.js"></script>
+<script src="../../assets/js/main.js" async></script>
+<script src="../../assets/js/contact.js" async></script>
