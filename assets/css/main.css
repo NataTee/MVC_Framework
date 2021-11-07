@@ -136,6 +136,12 @@ input:focus {
   background-color: rgb(220, 255, 220);
 }
 
+div#msg {
+  color: red;
+  text-align: center;
+  font-size: 1.1em;
+}
+
 /* Footer styles */
 
 footer {
