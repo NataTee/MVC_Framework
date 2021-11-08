@@ -9,6 +9,8 @@ Filename: contact.js
 */
 
 function clearForm() {
+    //this function replaces the text in the text boxes with empty strings
+    // and replaces the message area with an html <br>  
     $("#nameBox").val("");
     $("#emailBox").val("");
     $("#re-emailBox").val("");
@@ -22,7 +24,7 @@ function sendData(name, email, subject, message) {
     let msgArea = document.getElementById("msg");
 
     $.ajax({
-        url: '/application/views/pages/email.php',
+        url: 'email',
         type: 'POST',
         data: {name: name, email: email, subject: subject, message: message},
         success: function (val) {
