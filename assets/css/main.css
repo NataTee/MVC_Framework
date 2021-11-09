@@ -44,15 +44,15 @@ body {
    display: flex;
    -webkit-flex-flow: row nowrap;
    flex-flow: row nowrap;
-	 width: 100%;
+   width: 100%;
    list-style: none;
    padding-left: 0;
 }
 
 .horizontalNavigation li {
-    display: block;
-    text-align: center;
-  }
+   display: block;
+   text-align: center;
+}
 
 .horizontalNavigation a {
    color: rgb(231, 231, 231);
@@ -81,25 +81,29 @@ aside {
 
 aside p {
   font-size: 1.3em;
+  padding: 2px;
 }
 
-section#programs article {
+section#programs article, section#about article {
   margin: 10px;
-  display: block;
 }
 
-section#programs article p {
+section#programs article p,
+section#about article p {
   font-size: 1.2em;
+}
+
+section#programs article img,
+section#about article img {
+  margin-right: 10px;
 }
 
 section#programs article img {
   width: 50%;
-  margin: 10px auto;
 }
 
-div p {
-  display: block;
-  margin: 10px;
+.contact-body p, .contact p {
+  padding: 0px 10px;
 }
 
 /* Form Layout Styles */
@@ -115,8 +119,8 @@ fieldset {
 }
 
 div.formRow {
-	display: -webkit-flex;
-	display: flex;
+  display: -webkit-flex;
+  display: flex;
 	-webkit-flex-flow: row wrap;
 	flex-flow: row wrap;
 	margin: 7px 0px;
@@ -149,6 +153,7 @@ footer {
   font-size: 1.1em;
   padding: 10px;
   text-align: center;
+  clear: both;
 }
 
 footer img {
@@ -178,8 +183,9 @@ footer img {
     padding: 2px;
   }
 
-  section#programs article img {
-    display: flex;
+  section#programs article img,
+  section#about article img {
+    float: left;
     width: 100%;
   }
 
@@ -192,8 +198,13 @@ footer img {
   	flex: 1 1 100px;
   }
 
-  section#programs article {
+  section#programs article,
+  section#about article {
     margin: 3px;
+  }
+
+  .contact-body iframe {
+    width: 100%;
   }
 
 }
@@ -215,11 +226,17 @@ footer img {
   }
 
   section#programs article img {
+    margin: 10px auto;
     display: flex;
     width: 70%;
   }
 
-  #registration fieldset, #email-form fieldset {
+  section#about article img {
+    float: left;
+    width: 50%;
+  }
+
+  #email-form fieldset {
     font-size: 1.3em;
     margin: 15px;
   }
@@ -227,6 +244,10 @@ footer img {
   div.formRow > * {
   	-webkit-flex: 1 1 150px;
   	flex: 1 1 150px;
+  }
+
+  .contact-body iframe {
+    width: 100%;
   }
 }
 
@@ -237,101 +258,106 @@ footer img {
 
 @media only screen and (min-width: 769px) {
 
-    h2 {
-      font-size: 1.7em;
-    }
-
-    .horizontalNavigation li {
-    	 width: 50%;
-    }
-
-    .horizontalNavigation a {
-       text-align: center;
-       font-size: 2em;
-    }
-
-    .horizontalNavigation a:hover {
-       color: black;
-       padding: 10px;
-    }
-
-    aside {
-      padding: 10px;
-    }
-
-    section#programs article {
-      display: flex;
-    }
-
-    section#programs article p {
-      margin: 10px;
-    }
-
-    .about-body {
-      display: flex;
-    }
-
-    .about-body iframe{
-      float: right;
-    }
-
-    .about-body p {
-      padding: 10px;
-    }
-
-    .contact p {
-      padding: 10px;
-      text-align: center;
-      font-size: 1.1em;
-    }
-
-    .main-banner {
-      margin: 0 auto;
-      width: 100%;
-      height: 600px;
-      overflow: hidden;
-      position: relative;
-    }
-
-    .main-banner .imgban {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0px;
-      transition: all ease-in-out 500ms;
-      -webkit-transition: all ease-in-out 500ms;
-      -moz-transition: all ease-in-out 500ms;
-      -o-transition: all ease-in-out 500ms;
-    }
-
-    .main-banner #imgban3 {
-      background-image: url(../images/equip.jpg);
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-
-    .main-banner #imgban2 {
-      background-image: url(../images/cassey.jpg);
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-
-    .main-banner #imgban1 {
-      background-image: url(../images/kids.jpg);
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-
-    #registration fieldset, #email-form fieldset {
-      font-size: 1.5em;
-      margin: 25px;
-    }
-
-    div.formRow > * {
-    	-webkit-flex: 1 1 150px;
-    	flex: 1 1 150px;
-    }
+  h2 {
+    font-size: 1.7em;
   }
+
+  .horizontalNavigation li {
+    width: 50%;
+  }
+
+  .horizontalNavigation a {
+    text-align: center;
+    font-size: 2em;
+  }
+
+  .horizontalNavigation a:hover {
+    color: black;
+    padding: 10px;
+  }
+
+  aside {
+    padding: 0px 5px;
+  }
+
+  section#programs article {
+    display: flex;
+  }
+
+  section#programs article p,
+  section#about article p {
+    margin: 10px;
+  }
+
+  section#about article img {
+    width: 50%;
+    float: left;
+    height: 50%;
+  }
+
+  .contact-body {
+    display: flex;
+  }
+
+  .contact-body iframe {
+    float: right;
+    width: 600px;
+    height: 400px;
+  }
+
+  .contact p {
+    padding: 5px;
+    text-align: center;
+    font-size: 1.1em;
+  }
+
+  .main-banner {
+    margin: 0 auto;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .main-banner .imgban {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    transition: all ease-in-out 500ms;
+    -webkit-transition: all ease-in-out 500ms;
+    -moz-transition: all ease-in-out 500ms;
+    -o-transition: all ease-in-out 500ms;
+  }
+
+  .main-banner #imgban3 {
+    background-image: url(../images/equip.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .main-banner #imgban2 {
+    background-image: url(../images/cassey.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .main-banner #imgban1 {
+    background-image: url(../images/kids.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  #email-form fieldset {
+    font-size: 1.5em;
+    margin: 25px;
+  }
+
+  div.formRow > * {
+    -webkit-flex: 1 1 150px;
+    flex: 1 1 150px;
+  }
+}
