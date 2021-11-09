@@ -3,7 +3,7 @@ Name: Natalia Ksenz
 Coding 07
 Purpose: MVC Frameworks
 
-Filename: home.php
+Filename: about.php
 -->
 
 <div class="about-body">
@@ -62,5 +62,5 @@ Filename: home.php
 </div>
 
 <script src="../../assets/js/jquery-3.6.0.min.js"></script>
-<script src="../../assets/js/main.js" async></script>
-<script src="../../assets/js/contact.js" async></script>
+<script type="text/javascript" src="../../assets/js/main.js" async></script>
+<script type="text/javascript" src="../../assets/js/contact.js" async></script>
