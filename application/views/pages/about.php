@@ -8,59 +8,61 @@ Filename: about.php
 
 <div class="about-body">
   <p>
-    If you have any questions, you can find us at: <br>
-    11928 Stonehollow Dr, Austin, TX 78758<br>
-    or call us (012)345-6789.
+    <img src="../../assets/images/1.jpg" alt="1" />
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac sapien
+    sed lectus fringilla venenatis. Donec laoreet a nisi vehicula tempus. Nunc
+    sem metus, rhoncus ut gravida eget, commodo at odio. Fusce ut volutpat massa.
+    Vivamus consectetur, nunc eu volutpat posuere, leo neque ornare tortor, id
+    iaculis sapien enim in magna. Quisque vestibulum dui ultrices sapien commodo,
+    in condimentum felis tempor. Nullam tortor felis, pellentesque id pulvinar in,
+    convallis vitae lacus. Morbi consequat suscipit velit. Nullam scelerisque
+    tellus et sem cursus, iaculis ultrices dui venenatis. Sed euismod non sem a
+    cursus. Suspendisse volutpat, eros sit amet mollis condimentum, purus velit
+    convallis metus, id rhoncus nisl mauris in metus.
   </p>
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1679.3368899757415!2d-97.70555322126964!3d30.40347985700749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644cc04a13b8723%3A0x917faa48756bfdb2!2sAustin%20Community%20College%3A%20Northridge%20Campus!5e0!3m2!1sen!2sus!4v1636217978282!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+  <p>
+    Quisque ut ullamcorper diam. Vivamus accumsan nulla nulla, id vestibulum orci
+    fermentum vel. Nullam vitae efficitur augue. Sed consequat leo nec sapien
+    gravida gravida. Phasellus scelerisque rhoncus tellus, facilisis sodales urna
+    ultricies id. Ut iaculis leo ac nunc ultrices, quis commodo quam blandit.
+    Duis congue urna luctus porttitor facilisis. Sed mollis tincidunt nulla quis
+    molestie. Mauris efficitur id est nec rhoncus. Vestibulum posuere laoreet
+    mauris ac placerat. Nunc ultricies feugiat aliquet. Nam commodo libero et
+    dignissim pretium. Cras sodales dolor eros, vel porttitor metus hendrerit at.
+  </p>
+
+  <p>
+    <img src="../../assets/images/2.jpg" alt="2" />
+    Maecenas aliquam vel nisi eget mattis. Cras hendrerit nunc tempus, dictum
+    massa vitae, porttitor eros. Vestibulum in quam quam. Quisque dignissim eros
+    id lorem lobortis vehicula. Aenean blandit, erat ac accumsan auctor, risus
+    risus feugiat turpis, ut vestibulum nisl est ac ligula. Mauris et luctus
+    tortor. Morbi id dignissim ligula. Quisque ut diam eu orci placerat posuere
+    ac non lacus. Maecenas nisi tortor, eleifend ut sagittis efficitur, aliquam
+    eget tellus. Etiam sed libero lectus. Etiam laoreet interdum fermentum.
+    Pellentesque dignissim ligula ac enim hendrerit, quis dignissim lorem sagittis.
+  </p>
+
+  <p>
+    Nam semper id odio vel bibendum. Donec eu ligula blandit, condimentum ex vitae,
+    ultricies sem. Phasellus aliquet faucibus tellus eu tempus. In hac habitasse
+    platea dictumst. Morbi suscipit mi et sagittis sodales. Donec eget nibh ut
+    massa laoreet lobortis. Ut sollicitudin nisl quis mattis sodales. Curabitur
+    pellentesque urna in tempus auctor. Donec vitae dictum nisl. Nulla tincidunt
+    eget diam vel posuere. Vivamus at orci mi. Ut laoreet ligula in risus tristique
+    dapibus.
+  </p>
+
+  <p>
+    Praesent ut urna tincidunt, suscipit odio id, blandit lorem. Mauris gravida
+    odio eget nunc condimentum tempus. Sed enim tellus, aliquet nec mauris id,
+    ultrices viverra nulla. Pellentesque fermentum nibh eu nulla interdum
+    pellentesque at sit amet mi. Donec interdum lectus nec dui rhoncus, vitae
+    consequat nulla pulvinar. Pellentesque porta sem ac ex tincidunt hendrerit.
+    Nullam efficitur eget nunc vitae posuere. Aenean nec vestibulum dolor.
+    Pellentesque egestas, tellus aliquet tristique auctor, felis velit volutpat
+    nunc, suscipit porttitor lorem erat vel tellus. Duis eget elit a magna
+    efficitur tempor.
+  </p>
 </div>
-<hr>
-<div class="contact">
-    <p id="contact-title">If you have additional comments or concerns, feel free to
-      contact us by 3058107@gmail.com<br> or just leave your message here</p>
-</div>
-
-<div id="msg">
-    <!-- Error message -->
-    <br>
-</div>
-
-<form id="email-form" name="email-form">
-  <fieldset>
-
-    <div class="formRow">
-        <label for="nameBox">First and last name</label>
-        <input type="text" id="nameBox" name="name" maxlength="64" placeholder="Jane Doe">
-    </div>
-
-    <div class="formRow">
-        <label for="emailBox">Email address</label>
-        <input type="text" id="emailBox" name="email" maxlength="64" placeholder="example@example.com">
-    </div>
-
-    <div class="formRow">
-        <label for="re-emailBox">Re-enter email address</label>
-        <input type="text" id="re-emailBox" name="re-email" maxlength="64" placeholder="example@example.com">
-    </div>
-
-    <div class="formRow">
-        <label for="subjectBox">Subject</label>
-        <input type="text" id="subjectBox" name="subject" maxlength="64" placeholder="Customer service">
-    </div>
-
-    <div class="formRow">
-        <label for="messageBox">Tell us more about your experience!</label>
-        <textarea name="message" id="messageBox" maxlength="1000"></textarea>
-    </div>
-
-  </fieldset>
-</form>
-
-<div id="button">
-    <button type="button" id="submitBtn">Send</button>
-    <button type="button" id="clearBtn">Clear</button>
-</div>
-
-<script src="../../assets/js/jquery-3.6.0.min.js"></script>
-<script type="text/javascript" src="../../assets/js/main.js" async></script>
-<script type="text/javascript" src="../../assets/js/contact.js" async></script>
