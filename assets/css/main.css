@@ -106,6 +106,10 @@ section#programs article img {
   padding: 0px 10px;
 }
 
+.main-news, .news-body {
+  padding: 5px;
+}
+
 /* Form Layout Styles */
 
 fieldset {
@@ -273,7 +277,6 @@ footer img {
 
   .horizontalNavigation a:hover {
     color: black;
-    padding: 10px;
   }
 
   aside {
