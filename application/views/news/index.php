@@ -1,12 +1,12 @@
-<h2><?php echo $title; ?></h2>
+<h2><?=$title?></h2>
 
 <?php foreach ($news as $news_item): ?>
 
-        <h3><?php echo $news_item['title']; ?></h3>
-        <div class="main">
-                <?php echo $news_item['text']; ?>
+        <h3><?=$news_item['title']?></h3>
+        <div class="main-news">
+                <?=$news_item['text']?>
+                <br>
+                <p><a href="<?='/news/'.$news_item['slug']?>">Read more...</a></p>
         </div>
-        <br>
-        <p><a href="<?= '/news/'.$news_item['slug'] ?>">Read more...</a></p>
-
+        
 <?php endforeach; ?>
