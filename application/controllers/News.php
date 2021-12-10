@@ -1,3 +1,11 @@
+<!--
+Name: Natalia Ksenz
+Final project
+Purpose: Creation of a full featured MVC website
+
+Filename: News.php
+-->
+
 <?php
 class News extends CI_Controller {
 
@@ -24,11 +32,11 @@ class News extends CI_Controller {
         $data['title'] = 'News archive';
         $news_item = $this->news_model->get_news($slug);
 
+        $data['news_item'] = $this->parser->parse('templates/news_item_template', $news_item, TRUE);
+
         if (empty($data['news_item'])) {
             show_404();
         }
-
-        $data['news_item'] = $this->parser->parse('templates/news_item_template', $news_item, TRUE);
 
         $this->load->view('templates/header', $data);
         $this->load->view('news/view');

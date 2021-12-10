@@ -1,3 +1,11 @@
+<!--
+Name: Natalia Ksenz
+Final project
+Purpose: Creation of a full featured MVC website
+
+Filename: news_template.php
+-->
+
 <div>
   {news}
     <span>
