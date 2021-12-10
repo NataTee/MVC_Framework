@@ -8,11 +8,11 @@ Filename: news_template.php
 
 <div>
   {news}
-    <span>
-      <h3>{title}</h3>
+    <div class="importance-{importance}">
+      <h3><img src="../../assets/images/star.png">{title}</h3>
       <p>{text}</p>
       <a href="/news/{slug}">Read more...</a>
-    </span>
+    </div>
   {/news}
   <br>
 </div>
