@@ -8,5 +8,6 @@ Filename: news_item_template.php
 <div>
   <h3>{title}</h3>
   <br>
-  {text}
+  <p>{text}</p>
+  <a href="/news">Go back...</a>
 </div>
