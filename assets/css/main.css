@@ -65,6 +65,13 @@ body {
 
 /* Div Styles */
 
+h1 {
+  text-align: center;
+  font-size: 2.2em;
+  text-shadow: rgb(255, 204, 0) 2px 2px 1px,
+				   rgba(21, 21, 21, 0.66) 5px 5px 25px;
+}
+
 h2 {
   text-align: center;
 }
@@ -73,6 +80,10 @@ h3 {
   text-align: center;
   font-size: 1.5em;
   clear: both;
+}
+
+div a {
+  text-decoration: none;
 }
 
 aside {
@@ -106,8 +117,33 @@ section#programs article img {
   padding: 0px 10px;
 }
 
-.main-news, .news-body {
+.main-news div, .news-body {
+  padding: 10px;
+}
+
+.main-news, #news_item {
   padding: 5px;
+}
+
+.importance-1 img {
+  display: inline-block;
+  width: 5%;
+}
+
+.importance-1 {
+  border-radius: 20px;
+  border: 1px solid black;
+  background: rgba(255, 204, 0, 0.4);
+}
+
+.importance-0 img {
+  display: none;
+}
+
+.importance-0, #news_item {
+  border-radius: 20px;
+  border: 1px solid black;
+  background: white;
 }
 
 /* Form Layout Styles */
