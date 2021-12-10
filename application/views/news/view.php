@@ -7,7 +7,9 @@ Filename: view.php
 -->
 
 <div class="news-body">
-    <?=$news_item?>
-    <br>
-    <a href="/news">Go back...</a>
+    <div id="news_item">
+        <?=$news_item?>
+        <br>
+    </div>
 </div>
+<br>
