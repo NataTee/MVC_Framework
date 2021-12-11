@@ -95,6 +95,39 @@ aside p {
   padding: 2px;
 }
 
+.quote span {
+  width: 90%;
+  display: block;
+  background-color: rgba(255, 204, 0, 0.4);
+  border: 1px solid black;
+  border-radius: 20px;
+  margin: 5px auto;
+}
+
+blockquote#text {
+  display: block;
+  font-size: 1.5em;
+  font-style: italic;
+}
+
+figcaption#author {
+  font-size: 1.3em;
+  margin-left: 50px;
+  padding-bottom: 10px;
+}
+
+.quote blockquote::before {
+  content: open-quote;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.quote blockquote::after {
+	content: close-quote;
+	font-size: 1.3em;
+	font-weight: bold;
+}
+
 section#programs article, section#about article {
   margin: 10px;
 }
