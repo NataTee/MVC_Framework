@@ -7,6 +7,16 @@ Filename: about.php
 -->
 
 <div class="about-body">
+  <aside class="quote">
+      <span>
+          <blockquote id="text">
+          </blockquote>
+
+          <figcaption id="author">
+          </figcaption>
+      </span>
+  </aside>
+
   <section id="about">
     <article>
       <img src="../../assets/images/1.jpg" alt="1" />
@@ -78,3 +88,6 @@ Filename: about.php
     </article>
   </section>
 </div>
+
+<script src="../../assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="../../assets/js/quote.js" async></script>
