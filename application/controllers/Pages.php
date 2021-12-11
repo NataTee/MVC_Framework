@@ -1,4 +1,14 @@
+<!--
+Name: Natalia Ksenz
+Final project
+Purpose: Creation of a full featured MVC website
+
+Filename: Pages.php
+-->
+
 <?php
+defined('BASEPATH') OR exit('Forbidden');
+
 class Pages extends CI_Controller {
 
 	public function view($page = 'home')

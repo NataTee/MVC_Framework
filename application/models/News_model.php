@@ -1,4 +1,15 @@
+<!--
+Name: Natalia Ksenz
+Final project
+Purpose: Creation of a full featured MVC website
+
+Filename: News_model.php
+-->
+
 <?php
+
+defined('BASEPATH') OR exit('Forbidden');
+
 class News_model extends CI_Model {
 
     public function __construct() {

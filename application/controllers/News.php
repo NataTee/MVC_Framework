@@ -7,6 +7,9 @@ Filename: News.php
 -->
 
 <?php
+
+defined('BASEPATH') OR exit('Forbidden');
+
 class News extends CI_Controller {
 
     public function __construct() {

@@ -1,5 +1,7 @@
 <?php
 
+defined('BASEPATH') OR exit('Forbidden');
+
 /*
 Name: Natalia Ksenz
 Coding 08
